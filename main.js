@@ -164,3 +164,69 @@ function car1_down() {
 
             }
 
+
+            function car2_up() {
+
+                if ( car2_Y >= 0){
+                
+                car2_Y = car2_Y-10;
+                console.log ("when up arrow is pressed , x=" + car2_X + "& y=" + car2_Y);
+                upload_background();
+                upload_car1();
+                upload_car2();
+                
+                }
+                
+                }
+                
+                function car2_down() {
+                
+                    if ( car2_Y <= 500){
+                    
+                    car2_Y = car2_Y+10;
+                    console.log ("when down arrow is pressed , x=" + car2_X + "& y=" + car2_Y);
+                    upload_background();
+                    upload_car1();
+                    upload_car2();
+                    
+                    }
+                    
+                    }
+                
+                    function car2_left() {
+                
+                        if ( car2_X >= 0){
+                        
+                        car2_X = car2_X-10;
+                        console.log ("when left arrow is pressed , x=" + car2_X + "& y=" + car2_Y);
+                        upload_background();
+                        upload_car1();
+                        upload_car2();
+                        
+                        
+                        }
+                        
+                        }
+                
+                        function car2_right() {
+                
+                            if ( car2_X <= 500){
+                            
+                            car2_X = car2_X+10;
+                            console.log ("when right arrow is pressed , x=" + car2_X + "& y=" + car2_Y);
+                            upload_background();
+                            upload_car1();
+                            upload_car2();
+                            
+                            }
+                            
+                            }
+                
+                            if(car1_X > 700){
+                
+                             console.log("Car1 Won")
+                             document.getElementById('game_status').innerHTML = "CAR1 WON!!!!!!"
+                
+                            }
+                
+                
