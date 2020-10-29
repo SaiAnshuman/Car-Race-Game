@@ -98,6 +98,20 @@ if (keypress == '68'){
     console.log("D");
 }
 
+if(car1_X > 700){
+                
+    console.log("Car1 Won");
+    document.getElementById('game_status').innerHTML = "CAR1 WON!!!!!!";
+
+   }
+
+   if(car2_X > 700){
+
+       console.log("Car2 Won");
+       document.getElementById('game_status').innerHTML = "CAR2 WON!!!!!!";
+
+      }
+
 }
 
 function car1_up() {
@@ -145,7 +159,7 @@ function car1_down() {
 
         function car1_right() {
 
-            if ( car1_X <= 500){
+            if ( car1_X <= 700){
             
             car1_X = car1_X+10;
             console.log ("when right arrow is pressed , x=" + car1_X + "& y=" + car1_Y);
@@ -210,7 +224,7 @@ function car1_down() {
                 
                         function car2_right() {
                 
-                            if ( car2_X <= 500){
+                            if ( car2_X <= 700){
                             
                             car2_X = car2_X+10;
                             console.log ("when right arrow is pressed , x=" + car2_X + "& y=" + car2_Y);
@@ -222,11 +236,5 @@ function car1_down() {
                             
                             }
                 
-                            if(car1_X > 700){
-                
-                             console.log("Car1 Won")
-                             document.getElementById('game_status').innerHTML = "CAR1 WON!!!!!!"
-                
-                            }
-                
+
                 
